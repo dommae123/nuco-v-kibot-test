@@ -3,17 +3,17 @@ kibot:
   version: 1
 
 variants:
-  - name: 'default'
+  - name: default
     comment: 'Minimal PCB no USB'
     type: kibom
 
-  - name: 'DEV'
+  - name: DEV
     comment: 'Development'
     type: kibom
     file_id: _DEV
     variant: DEV
 
-  - name: 'REL'
+  - name: REL
     comment: 'Release'
     type: kibom
     file_id: _REL
