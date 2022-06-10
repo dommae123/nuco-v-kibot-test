@@ -57,12 +57,9 @@ jobs:
         run: zip -qq -r "../${{ env.BaseFileName }}-fab_outputs.zip" PCBWay PDFs Renders Schematic
         working-directory: ${{ env.OutputFolder }}
 
-      # Upload all the zip files to the release. 
-      - name: Upload release files
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Archive all the artifacts from output and attach to the action's results.
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
         with:
-          files: |
-            ${{ env.BaseFileName }}-fab_outputs.zip
+          name: ${{ env.BaseFileName }}
+          path: ${{ env.OutputFolder }}/**
