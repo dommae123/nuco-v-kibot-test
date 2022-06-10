@@ -4,7 +4,7 @@ kibot:
   version: 1
 
 preflight:
-  run_erc: true
+  run_erc: false
 
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
