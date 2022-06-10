@@ -7,8 +7,12 @@
 name: "KiBot - Release Full Output"
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Design version"
+        required: true
+        default: "pre-release"
 
 jobs:
   FabricationAndDocumentation:
