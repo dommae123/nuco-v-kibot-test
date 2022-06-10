@@ -2,23 +2,6 @@
 kibot:
   version: 1
 
-variants:
-  - name: default
-    comment: 'Minimal PCB no USB'
-    type: kibom
-
-  - name: DEV
-    comment: 'Development'
-    type: kibom
-    file_id: _DEV
-    variant: DEV
-
-  - name: REL
-    comment: 'Release'
-    type: kibom
-    file_id: _REL
-    variant: REL
-
 outputs:
   - name: 'bom_xlsx'
     comment: "Spreadsheet for the Bill of Materials"
