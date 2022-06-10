@@ -32,6 +32,7 @@ outputs:
     type: bom
     dir: BoM
     options:
+      variant: REL
       <<: *bom_options
       format: HTML
       html:
@@ -44,12 +45,15 @@ outputs:
     type: ibom
     dir: BoM
     options:
+      variant: REL
       layer_view: F
 
   - name: 'print_sch'
     comment: "Schematic PDF"
     type: pdf_sch_print
     dir: Schematic
+    options:
+      variant: REL
 
   - name: gerbers
     comment: Gerbers
@@ -76,6 +80,7 @@ outputs:
       map:
         type: pdf
       pth_and_npth_single_file: false
+      variant: REL
 
   - name: position
     comment: Pick & Place
@@ -83,6 +88,7 @@ outputs:
     dir: Position
     options:
       separate_files_for_front_and_back: false
+      variant: REL
 
   - name: print_pdf
     comment: "PDF for the PCB"
@@ -90,6 +96,7 @@ outputs:
     dir: PCB
     options:
       force_edge_cuts: true
+      variant: REL
       keep_temporal_files: true
       title: "Arduino programmer KiBot demo"
       scaling: 2.0
@@ -107,6 +114,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
 
@@ -115,6 +123,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       output: '%f-%i%v-filled.%x'
@@ -124,6 +133,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       bottom: true
@@ -133,6 +143,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       bottom: true
@@ -148,6 +159,7 @@ outputs:
     type: render_3d
     dir: 3D
     options:
+      variant: REL
       zoom: 4
       rotate_x: 3
       rotate_z: 3
