@@ -4,7 +4,7 @@ kibot:
   version: 1
 
 preflight:
-  run_erc: true
+  run_erc: false
   run_drc: false
   
   # This is important to set to true so replacement of version and date strings in the release
