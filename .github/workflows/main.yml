@@ -14,7 +14,7 @@ jobs:
   FabricationAndDocumentation:
     env:
       # Set this to the base filename of your project.
-      BaseFileName: nuco-v-kibot-test
+      BaseFileName: Campinglaterne
       # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
       Timezone: America/New_York
       # Set this to the output folder for all of the generated files. Unless you have a very
@@ -44,14 +44,14 @@ jobs:
       - name: Set schematic version
         uses: jacobtomlinson/gha-find-replace@master
         with:
-          include: ".*.sch"
+          include: ".*.kicad_sch"
           find: "%%version%%"
           replace: ${{ steps.get_version.outputs.version }}
 
       - name: Set schematic date
         uses: jacobtomlinson/gha-find-replace@master
         with:
-          include: ".*.sch"
+          include: ".*.kicad_sch"
           find: "%%date%%"
           replace: ${{ steps.date.outputs.date }}
 
