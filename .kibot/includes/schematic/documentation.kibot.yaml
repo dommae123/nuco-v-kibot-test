@@ -7,13 +7,13 @@ variants:
     comment: 'Minimal PCB no USB'
     type: kibom
 
-  - name: 'Dev'
+  - name: 'DEV'
     comment: 'Development'
     type: kibom
     file_id: _DEV
     variant: DEV
 
-  - name: 'Rel'
+  - name: 'REL'
     comment: 'Release'
     type: kibom
     file_id: _REL
