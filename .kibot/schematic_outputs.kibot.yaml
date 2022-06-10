@@ -9,7 +9,6 @@ preflight:
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
   output: "%f-%i.%x"
-  variant: "DEV"
 
 # This imports the KiBot scripts that actuall do all the generation. If you want to
 # generate different things/more things then change these to point to other .kibot.yaml files.
