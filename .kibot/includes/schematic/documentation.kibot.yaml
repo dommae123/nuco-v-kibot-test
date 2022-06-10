@@ -108,7 +108,6 @@ outputs:
       force_edge_cuts: true
       keep_temporal_files: true
       title: "Arduino programmer KiBot demo"
-      sheet_reference_layout: pcb_print.kicad_wks
       scaling: 2.0
       pages:
         - layers: [ F.Cu, F.SilkS, Dwgs.User ]
