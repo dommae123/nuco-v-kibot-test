@@ -113,10 +113,6 @@ outputs:
       pages:
         - layers: [ F.Cu, F.SilkS, Dwgs.User ]
           sheet: 'Top layer'
-        - layers: [ GND.Cu, Dwgs.User ]
-          sheet: 'GND plane'
-        - layers: [ Power.Cu, Dwgs.User ]
-          sheet: 'Power plane'
         - layers: [ B.Cu, B.SilkS, Dwgs.User ]
           sheet: 'Bottom layer'
           mirror: true
