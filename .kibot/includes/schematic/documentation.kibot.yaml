@@ -25,6 +25,7 @@ outputs:
     type: bom
     dir: BoM
     options: &bom_options
+      variant: DEV
       xlsx:
         datasheet_as_link: MFP
         title: 'KiBot variants example'
