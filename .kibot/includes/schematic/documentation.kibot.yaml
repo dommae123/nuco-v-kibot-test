@@ -13,7 +13,7 @@ outputs:
 
   - name: "standard_bom"
     comment: "Standard csv BOM for upload to Octopart or similar"
-    type: bom
+    type: ibom
     dir: Schematic
     options:
       blacklist: "DNF*"
