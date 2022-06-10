@@ -8,7 +8,7 @@ outputs:
     type: bom
     dir: BoM
     options: &bom_options
-      variant: DEV
+      variant: REL
       xlsx:
         datasheet_as_link: MFP
         title: 'KiBot variants example'
