@@ -5829,7 +5829,7 @@
   (symbol (lib_id "Device:LED") (at 101.6 287.02 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 21d64de5-121d-4912-9a18-ef086f5b44bc)
-    (property "Reference" "D?" (id 0) (at 102.87 284.48 90)
+    (property "Reference" "D5" (id 0) (at 102.87 284.48 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "LED yellow" (id 1) (at 102.87 289.56 90)
@@ -7386,8 +7386,8 @@
     )
     (pin "1" (uuid 773fb5d9-a12f-426b-b700-2e2ff09507ce))
     (pin "2" (uuid ef24291b-25e7-46f9-aa70-d2cd044469de))
-    (pin "3" (uuid b9929c37-0e13-4e82-84a7-39ec8b4832d9))
-    (pin "4" (uuid 319c36b8-fba9-4c0a-8984-87bf3ac7fd1a))
+    (pin "3" (uuid b9929c37-0e13-4e82-84a7-39ec8b4832da))
+    (pin "4" (uuid 319c36b8-fba9-4c0a-8984-87bf3ac7fd1b))
     (pin "5" (uuid 73ae3682-7d18-413b-85e6-61ce57e14985))
     (pin "6" (uuid 41a338ac-0b6f-4709-9ea1-78dce122d0a2))
     (pin "7" (uuid da2d6dca-39f7-46ef-9b0e-2a8dc3325dd3))
@@ -7801,7 +7801,7 @@
   (symbol (lib_id "Device:R") (at 101.6 276.86 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 9ca7c142-8976-4bce-9681-5f8ed596edf1)
-    (property "Reference" "R?" (id 0) (at 103.378 276.0253 0)
+    (property "Reference" "R58" (id 0) (at 103.378 276.0253 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "not_ass_1k" (id 1) (at 103.378 278.5622 0)
@@ -8852,7 +8852,7 @@
   (symbol (lib_id "Connector:Conn_01x02_Female") (at 111.76 287.02 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e31e9de9-33a9-47a1-ba4c-67658a743fa1)
-    (property "Reference" "J?" (id 0) (at 112.4712 287.4553 0)
+    (property "Reference" "J17" (id 0) (at 112.4712 287.4553 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x02_Female" (id 1) (at 112.4712 289.9922 0)
@@ -9645,6 +9645,9 @@
     (path "/79dbc0c2-6ccb-477f-9604-39e762806b3a"
       (reference "D4") (unit 1) (value "15V") (footprint "Diode_SMD:D_SOT-23_ANK")
     )
+    (path "/21d64de5-121d-4912-9a18-ef086f5b44bc"
+      (reference "D5") (unit 1) (value "LED yellow") (footprint "LED_SMD:LED_0603_1608Metric")
+    )
     (path "/4f48ff2e-9390-47df-9a1b-dc8aefe60ddd"
       (reference "D6") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_SMB")
     )
@@ -9662,9 +9665,6 @@
     )
     (path "/b2786520-1d57-4884-a637-ed871fafe5c4"
       (reference "D11") (unit 1) (value "LED orange") (footprint "LED_SMD:LED_0603_1608Metric")
-    )
-    (path "/21d64de5-121d-4912-9a18-ef086f5b44bc"
-      (reference "D?") (unit 1) (value "LED yellow") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/85350319-8ae0-4928-abe3-2ebd069ba920"
       (reference "H1") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3_ISO14580")
@@ -9724,7 +9724,7 @@
       (reference "J16") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
     )
     (path "/e31e9de9-33a9-47a1-ba4c-67658a743fa1"
-      (reference "J?") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+      (reference "J17") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
     )
     (path "/f53938da-cdab-4f71-91f4-ea7fc2466c96"
       (reference "JP2") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm")
@@ -9951,14 +9951,14 @@
     (path "/42d0a433-bd1a-4f40-b844-e5f3e5640784"
       (reference "R57") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/9ca7c142-8976-4bce-9681-5f8ed596edf1"
+      (reference "R58") (unit 1) (value "not_ass_1k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
     (path "/0d9478b9-9d63-47f6-812d-b680b3b02598"
       (reference "R61") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/7ff0365a-725d-486f-a059-ca0d50a140f4"
       (reference "R62") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0603_1608Metric")
-    )
-    (path "/9ca7c142-8976-4bce-9681-5f8ed596edf1"
-      (reference "R?") (unit 1) (value "not_ass_1k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/657f9c17-1432-414d-b1e4-85e6f3e98841"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm")
