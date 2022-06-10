@@ -105,7 +105,6 @@ outputs:
     type: pcb_print
     dir: PCB
     options:
-      variant: DEV
       force_edge_cuts: true
       keep_temporal_files: true
       title: "Arduino programmer KiBot demo"
