@@ -1,37 +1,3 @@
-
-Skip to content
-Pulls
-Issues
-Marketplace
-Explore
-@dommae123
-MicroType-Engineering /
-nuco-v-kibot-test
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-
-    Insights
-
-v1.0
-KiBot - Release #6
-
-Summary
-
-    Workflow file
-
-Jobs
-
-    FabricationAndDocumentation
-
-Workflow file for this run
-.github/workflows/gen_full_outputs.yml at 4bbc2f2
 # This workflow generates documentation (PDFs, interactive BOMs, board images) and fabrication
 # files for JLCPCB and PCBWay. The version number and date of the design is automatically
 # updated in the schematic file and on the PCB based on the GitHub release version and date.
