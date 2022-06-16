@@ -49,7 +49,6 @@ outputs:
     comment: "Schematic PDF"
     type: pdf_sch_print
     dir: Schematic
-    options:
 
   - name: gerbers
     comment: Gerbers
