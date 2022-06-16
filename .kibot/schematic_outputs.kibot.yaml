@@ -9,6 +9,7 @@ preflight:
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
   output: "%f-%i.%x"
+  variant: REL
 
 filters:
   - name: 'Variant rename'
@@ -38,10 +39,5 @@ variants:
 
 # This imports the KiBot scripts that actuall do all the generation. If you want to
 # generate different things/more things then change these to point to other .kibot.yaml files.
-variant: REL
-import:
-  - includes/schematic/documentation.kibot.yaml
-  
-variant: DEV
 import:
   - includes/schematic/documentation.kibot.yaml
