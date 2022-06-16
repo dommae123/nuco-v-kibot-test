@@ -8,6 +8,7 @@ outputs:
     type: bom
     dir: BoM
     options: &bom_options
+      variant: REL
       xlsx:
         datasheet_as_link: MFP
         title: 'KiBot variants example'
@@ -31,6 +32,7 @@ outputs:
     type: bom
     dir: BoM
     options:
+      variant: REL
       <<: *bom_options
       format: HTML
       html:
@@ -43,12 +45,15 @@ outputs:
     type: ibom
     dir: BoM
     options:
+      variant: REL
       layer_view: F
 
   - name: 'print_sch'
     comment: "Schematic PDF"
     type: pdf_sch_print
     dir: Schematic
+    options:
+      variant: REL
 
   - name: gerbers
     comment: Gerbers
@@ -66,12 +71,15 @@ outputs:
       - F.Fab
       - F.CrtYd
       - Dwgs.User
+    options:
+      variant: REL
 
   - name: drill
     comment: Drill files
     type: excellon
     dir: Drill
     options:
+      variant: REL
       map:
         type: pdf
       pth_and_npth_single_file: false
@@ -81,6 +89,7 @@ outputs:
     type: position
     dir: Position
     options:
+      variant: REL
       separate_files_for_front_and_back: false
 
   - name: print_pdf
@@ -88,6 +97,7 @@ outputs:
     type: pcb_print
     dir: PCB
     options:
+      variant: REL
       force_edge_cuts: true
       keep_temporal_files: true
       title: "Arduino programmer KiBot demo"
@@ -106,6 +116,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
 
@@ -114,6 +125,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       output: '%f-%i%v-filled.%x'
@@ -123,6 +135,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       bottom: true
@@ -132,6 +145,7 @@ outputs:
     type: pcbdraw
     dir: PCB
     options:
+      variant: REL
       format: jpg
       dpi: 300
       bottom: true
