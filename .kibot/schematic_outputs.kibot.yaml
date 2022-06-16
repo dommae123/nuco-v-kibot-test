@@ -10,22 +10,31 @@ global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
   output: "%f-%i.%x"
 
+filters:
+  - name: 'Variant rename'
+    type: var_rename
+    separator: ':'
+    variant_to_value: true
+
 variants:
   - name: default
     comment: 'Minimal PCB no USB'
     type: kibom
+    pre_transform: 'Variant rename'
 
   - name: DEV
     comment: 'Development'
     type: kibom
     file_id: _DEV
     variant: DEV
+    pre_transform: 'Variant rename'
 
   - name: REL
     comment: 'Release'
     type: kibom
     file_id: _REL
     variant: REL
+    pre_transform: 'Variant rename'
 
 # This imports the KiBot scripts that actuall do all the generation. If you want to
 # generate different things/more things then change these to point to other .kibot.yaml files.
